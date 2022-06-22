@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "588296484694",
+    "firebase_url": "https://minh-82a74-default-rtdb.firebaseio.com",
+    "project_id": "minh-82a74",
+    "storage_bucket": "minh-82a74.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588296484694:android:3ab8e2efefaebd295f88f7",
+        "android_client_info": {
+          "package_name": "com.example.some"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "588296484694-ulmgp03um0e8kurp1kfotcd41otvf0t5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.some",
+            "certificate_hash": "5fcff8b9e617a58f0d637596973ab35d4f8808b0"
+          }
+        },
+        {
+          "client_id": "588296484694-ukcma8sommml12of854rqs5tovn4f2er.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeTw4H4D3QAiKYrABb1yTSlfVO9ATQgGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "588296484694-ukcma8sommml12of854rqs5tovn4f2er.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588296484694:android:3ae799bf0b219e835f88f7",
+        "android_client_info": {
+          "package_name": "com.example.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "588296484694-ukcma8sommml12of854rqs5tovn4f2er.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeTw4H4D3QAiKYrABb1yTSlfVO9ATQgGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "588296484694-ukcma8sommml12of854rqs5tovn4f2er.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.FragmentInfo"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/teal_700"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/cat4"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Trần Hùng Minh - B18DCCN413"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"/>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_left_normal"
+        android:paddingRight="@dimen/padding_right_normal"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/img">
+
+        <TextView
+            android:id="@+id/tvPersonal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Information"
+            android:textSize="14dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guideline1" />
+
+        <ImageButton
+            android:id="@+id/editBtn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="#fff"
+            android:src="@drawable/ic_baseline_edit_18"
+            app:layout_constraintLeft_toRightOf="@+id/tvPersonal"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="7dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_left_normal"
+        android:paddingRight="@dimen/padding_right_normal"
+        app:layout_constraintTop_toBottomOf="@id/title">
+
+        <LinearLayout
+            android:id="@+id/formNickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nick name"/>
+            <TextView
+                android:id="@+id/nickNameTv"
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:paddingTop="@dimen/padding_top_small"
+                android:layout_height="wrap_content"
+                android:text="Hùng Minh"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/formGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/padding_top_normal"
+            app:layout_constraintTop_toBottomOf="@id/formNickName"
+            app:layout_constraintLeft_toLeftOf="parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"/>
+            <TextView
+                android:id="@+id/genderTv"
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:paddingTop="@dimen/padding_top_small"
+                android:layout_height="wrap_content"
+                android:text="Nam"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/formBirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/padding_top_normal"
+            app:layout_constraintTop_toBottomOf="@id/formGender"
+            app:layout_constraintLeft_toLeftOf="parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Birthday"/>
+            <TextView
+                android:id="@+id/birthDayTv"
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:paddingTop="@dimen/padding_top_small"
+                android:layout_height="wrap_content"
+                android:text="05/10/2000"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/logout_24"
+        android:backgroundTint="#0ED6B9"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"/>
+
+</LinearLayout>
